@@ -1,0 +1,22 @@
+<%
+numbers = [1,2,3,4,5,6,7,8,9,10,"ace","jack","king","queen"]
+suits = ["clubs","diamonds","hearts","spades"]
+
+# <%= number1=numbers[rand(0..13)]%>
+# <%= suit1=suits[rand(0..3)]%>
+
+number1 = numbers.sample
+suit1 = suits.sample
+%>
+
+<ul>
+    <li><%=number1%></li>
+</ul>
+
+
+<h1>Draw a card</h1>
+
+
+<p>
+    <a href="/cards">Draw Again!</a>
+</p>
